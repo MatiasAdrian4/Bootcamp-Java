@@ -3,21 +3,35 @@ package api.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+
+@Entity
 public class Cart {
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name = "id_cart")
 	private Long id;
+	
+	@ManyToMany
+	@JoinColumn(name ="id_cartElem")
 	private List<CartElement> products;
 	
 	public Cart() {
 		
 	}
 	
-	public Cart(Long id, List<CartElement> products) {
-		this.id = id;
+	public Cart(List<CartElement> products) {
 		this.products = products;
 	}
 	
-	public Long getId() {
+	/*public Long getId() {
 		return id;
 	}
 	
@@ -38,6 +52,6 @@ public class Cart {
 			products = new ArrayList<CartElement>();
 		}
 		products.add(cartElem);
-	}
+	}*/
 	
 }

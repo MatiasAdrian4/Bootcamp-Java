@@ -2,9 +2,20 @@ package api.model;
 
 import java.util.concurrent.atomic.AtomicLong;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Product {
 	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name = "id_prod", unique = true)
 	private Long id;
+	
 	private String name;
 	private double price;
 	
@@ -12,8 +23,7 @@ public class Product {
 		
 	}
 	
-	public Product(Long id, String name, double price) {
-		this.id = id;
+	public Product(String name, double price) {
 		this.name = name;
 		this.price = price;
 	}
@@ -41,6 +51,5 @@ public class Product {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	
 	
 }

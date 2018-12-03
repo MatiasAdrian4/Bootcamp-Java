@@ -28,7 +28,7 @@ public class SwaggerConfig {
 	
     private ApiInfo apiInfo() {
         return new ApiInfo(
-          "Shopping Carts and Products", 
+          "Shopping Carts", 
           "", 
           "1.0.0", 
           "Terms of service", 

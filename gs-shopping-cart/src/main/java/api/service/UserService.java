@@ -1,4 +1,4 @@
-package api.service;
+/*package api.service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -60,4 +60,4 @@ public class UserService {
 		return new ArrayList<>(users.values());
 	}
 	
-}
+}*/

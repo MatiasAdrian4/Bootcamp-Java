@@ -1,4 +1,4 @@
-package api.service;
+/*package api.service;
 
 import api.model.Product;
 
@@ -42,4 +42,4 @@ public class ProductService {
 		return new ArrayList<>(products.values());
 	}
 	
-}
+}*/
