@@ -1,6 +1,4 @@
-package api.model;
-
-import java.util.concurrent.atomic.AtomicLong;
+package com.globant.bootcamp.shoppingcart.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

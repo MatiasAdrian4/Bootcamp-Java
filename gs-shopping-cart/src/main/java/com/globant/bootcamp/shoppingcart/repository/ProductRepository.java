@@ -1,8 +1,8 @@
-package api.repository;
+package com.globant.bootcamp.shoppingcart.repository;
 
 import org.springframework.data.repository.CrudRepository;
 
-import api.model.Product;
+import com.globant.bootcamp.shoppingcart.model.Product;
 
 public interface ProductRepository extends CrudRepository<Product,Long> {
 

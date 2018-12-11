@@ -1,12 +1,14 @@
-package api;
+package com.globant.bootcamp.shoppingcart;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import api.model.Product;
-import api.repository.ProductRepository;
+import com.globant.bootcamp.shoppingcart.model.Product;
+import com.globant.bootcamp.shoppingcart.model.User;
+import com.globant.bootcamp.shoppingcart.repository.ProductRepository;
+import com.globant.bootcamp.shoppingcart.repository.UserRepository;
 
 @SpringBootApplication
 public class App {
@@ -28,17 +30,17 @@ public class App {
 		};
 	}
 	
-	/*@Bean
+	@Bean
 	public CommandLineRunner dbUser(UserRepository repository) {
 		return(args) -> {
 			
-			repository.save(new User("Juan","Gonzalez",null));
-			repository.save(new User("Federico","Hernandez",null));
-			repository.save(new User("Gonzalo","Perez",null));
-			repository.save(new User("Pedro","Gonzalez",null));
-			repository.save(new User("Juan","Rodriguez",null));
+			repository.save(new User("Juan","Gonzalez"));
+			repository.save(new User("Federico","Hernandez"));
+			repository.save(new User("Gonzalo","Perez"));
+			repository.save(new User("Pedro","Gonzalez"));
+			repository.save(new User("Juan","Rodriguez"));
 			
 		};
-	}*/
+	}
 	
 }

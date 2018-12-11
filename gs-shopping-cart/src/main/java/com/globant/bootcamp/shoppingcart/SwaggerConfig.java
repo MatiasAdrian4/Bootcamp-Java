@@ -1,4 +1,4 @@
-package api;
+package com.globant.bootcamp.shoppingcart;
 
 import java.util.Collections;
 
